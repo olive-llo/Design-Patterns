@@ -1,0 +1,529 @@
+@startuml
+abstract class com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.Logger
+abstract class com.qualiformed.designpattern.pattern.comportement.patron_de_methode.JeuDeSociete
+abstract class com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueAbstraiteObjetGeometrique
+abstract class com.qualiformed.designpattern.pattern.creation.builder.BuilderMaison
+abstract class com.qualiformed.designpattern.pattern.structure.decorateur.Option
+abstract class com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable
+abstract class objets_de_base.ObjetGeometriqueAbstrait
+annotation java.lang.Override
+class com.cloudgarden.layout.AnchorConstraint
+class com.cloudgarden.layout.AnchorLayout
+class com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.EmailLogger
+class com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.StderrLogger
+class com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.StdoutLogger
+class com.qualiformed.designpattern.pattern.comportement.commande.CommandeBasculerEnBas
+class com.qualiformed.designpattern.pattern.comportement.commande.CommandeBasculerEnHaut
+class com.qualiformed.designpattern.pattern.comportement.commande.Interrupteur
+class com.qualiformed.designpattern.pattern.comportement.commande.Lampe
+class com.qualiformed.designpattern.pattern.comportement.etat.Contexte
+class com.qualiformed.designpattern.pattern.comportement.etat.EtatA
+class com.qualiformed.designpattern.pattern.comportement.etat.EtatB
+class com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge1
+class com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge2
+class com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Moins
+class com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Nombre
+class com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Plus
+class com.qualiformed.designpattern.pattern.comportement.interpreteur.Interpreteur
+class com.qualiformed.designpattern.pattern.comportement.iterateur.Iterateur
+class com.qualiformed.designpattern.pattern.comportement.mediateur.BtnBook
+class com.qualiformed.designpattern.pattern.comportement.mediateur.BtnSearch
+class com.qualiformed.designpattern.pattern.comportement.mediateur.BtnView
+class com.qualiformed.designpattern.pattern.comportement.mediateur.LblDisplay
+class com.qualiformed.designpattern.pattern.comportement.mediateur.Mediateur
+class com.qualiformed.designpattern.pattern.comportement.memento.Createur
+class com.qualiformed.designpattern.pattern.comportement.memento.Gardien
+class com.qualiformed.designpattern.pattern.comportement.observateur.Observateur
+class com.qualiformed.designpattern.pattern.comportement.observateur.Observe
+class com.qualiformed.designpattern.pattern.comportement.patron_de_methode.Echecs
+class com.qualiformed.designpattern.pattern.comportement.patron_de_methode.Monopoly
+class com.qualiformed.designpattern.pattern.comportement.strategie.Ajouter
+class com.qualiformed.designpattern.pattern.comportement.strategie.Contexte
+class com.qualiformed.designpattern.pattern.comportement.strategie.Multiplier
+class com.qualiformed.designpattern.pattern.comportement.strategie.Soustraire
+class com.qualiformed.designpattern.pattern.comportement.visiteur.Caisse
+class com.qualiformed.designpattern.pattern.comportement.visiteur.Moteur
+class com.qualiformed.designpattern.pattern.comportement.visiteur.Roue
+class com.qualiformed.designpattern.pattern.comportement.visiteur.VisiteurListeElementVoiture
+class com.qualiformed.designpattern.pattern.comportement.visiteur.VisiteurVerificationElementVoiture
+class com.qualiformed.designpattern.pattern.comportement.visiteur.Voiture
+class com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique2D
+class com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique3D
+class com.qualiformed.designpattern.pattern.creation.builder.BuilderImmeuble
+class com.qualiformed.designpattern.pattern.creation.builder.BuilderMaisonIndividuelle
+class com.qualiformed.designpattern.pattern.creation.builder.Maison
+class com.qualiformed.designpattern.pattern.creation.builder.MaitreDOeuvre
+class com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique
+class com.qualiformed.designpattern.pattern.creation.prototype.ConstructeurPrototype
+class com.qualiformed.designpattern.pattern.creation.prototype.Modele
+class com.qualiformed.designpattern.pattern.creation.prototype.ModeleBase
+class com.qualiformed.designpattern.pattern.creation.singleton.Singleton
+class com.qualiformed.designpattern.pattern.structure.adaptateur.AdaptateurSimpleTreeViewToHTML
+class com.qualiformed.designpattern.pattern.structure.adaptateur.TreeViewSimple
+class com.qualiformed.designpattern.pattern.structure.decorateur.AstonMartin
+class com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAmphibie
+class com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAvecClimatisation
+class com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAvecParachute
+class com.qualiformed.designpattern.pattern.structure.facade.DateFacile
+class com.qualiformed.designpattern.pattern.structure.objet_composite.Attribut
+class com.qualiformed.designpattern.pattern.structure.objet_composite.Noeud
+class com.qualiformed.designpattern.pattern.structure.objet_composite.NoeudValeur
+class com.qualiformed.designpattern.pattern.structure.poids_mouche.Cafe
+class com.qualiformed.designpattern.pattern.structure.poids_mouche.CommandeCafe
+class com.qualiformed.designpattern.pattern.structure.poids_mouche.ContexteCommande
+class com.qualiformed.designpattern.pattern.structure.pont.CercleDessinable
+class com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV1
+class com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV2
+class com.qualiformed.designpattern.pattern.structure.pont.ParallelepipedeDessinable
+class com.qualiformed.designpattern.pattern.structure.pont.RectangleDessinable
+class com.qualiformed.designpattern.pattern.structure.pont.SphereDessinable
+class com.qualiformed.designpattern.pattern.structure.pont.TetraedreDessinable
+class com.qualiformed.designpattern.pattern.structure.pont.TriangleDessinable
+class com.qualiformed.designpattern.pattern.structure.proxy.LigneTable
+class com.qualiformed.designpattern.pattern.structure.proxy.LigneTableProxy
+class com.qualiformed.designpattern.pattern.structure.proxy.Table
+class com.qualiformed.designpattern.pattern.structure.proxy.TableProxy
+class com.qualiformed.designpattern.pattern.structure.proxy.ValeurChaine
+class com.qualiformed.designpattern.pattern.structure.proxy.ValeurEntier
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_ChaineDeResponsabilite
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Commande
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Etat
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Interpreteur
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Iterateur
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Memento
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Observateur
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Strategie
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_Visiteur
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel
+class com.qualiformed.designpattern.tests.Test_PatternDeComportement_patron_de_methode
+class com.qualiformed.designpattern.tests.Test_PatternDeCreation_Builder
+class com.qualiformed.designpattern.tests.Test_PatternDeCreation_Fabrique
+class com.qualiformed.designpattern.tests.Test_PatternDeCreation_FabriqueAbstraite
+class com.qualiformed.designpattern.tests.Test_PatternDeCreation_Prototype
+class com.qualiformed.designpattern.tests.Test_PatternDeCreation_Singleton
+class com.qualiformed.designpattern.tests.Test_PatternStructure_Adaptateur
+class com.qualiformed.designpattern.tests.Test_PatternStructure_Composite
+class com.qualiformed.designpattern.tests.Test_PatternStructure_Decorateur
+class com.qualiformed.designpattern.tests.Test_PatternStructure_Facade
+class com.qualiformed.designpattern.tests.Test_PatternStructure_PoidsMouche
+class com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy
+class com.qualiformed.designpattern.tests.Test_PatternStructure_pont
+class java.awt.Color
+class java.awt.Dimension
+class java.awt.Font
+class java.awt.Graphics
+class java.awt.Image
+class java.awt.Rectangle
+class java.awt.Toolkit
+class java.awt.event.ActionEvent
+class java.awt.event.ComponentAdapter
+class java.awt.event.ComponentEvent
+class java.awt.event.WindowAdapter
+class java.awt.event.WindowEvent
+class java.beans.PropertyChangeEvent
+class java.beans.PropertyChangeListener
+class java.util.ArrayList
+class java.util.Arrays
+class java.util.Calendar
+class java.util.Collection
+class java.util.GregorianCalendar
+class java.util.HashMap
+class java.util.List
+class java.util.Map.Entry
+class java.util.Stack
+class javax.swing.ComboBoxModel
+class javax.swing.DefaultComboBoxModel
+class javax.swing.JButton
+class javax.swing.JComboBox
+class javax.swing.JFrame
+class javax.swing.JLabel
+class javax.swing.JPanel
+class javax.swing.JSplitPane
+class javax.swing.SwingUtilities
+class javax.swing.WindowConstants
+class objets_de_base.Carre
+class objets_de_base.Cercle
+class objets_de_base.Coord2D
+class objets_de_base.Coord3D
+class objets_de_base.Cube
+class objets_de_base.EmptyHtmlBuilder
+class objets_de_base.ListeObjetGeometrique
+class objets_de_base.Parallelepipede
+class objets_de_base.Rectangle
+class objets_de_base.Sphere
+class objets_de_base.Tetraedre
+class objets_de_base.Triangle
+enum objets_de_base.EnumBaseForme
+enum objets_de_base.EnumDimension
+interface com.qualiformed.designpattern.pattern.comportement.commande.ICommande
+interface com.qualiformed.designpattern.pattern.comportement.etat.IEtat
+interface com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.ICallbackPaint
+interface com.qualiformed.designpattern.pattern.comportement.interpreteur.Expression
+interface com.qualiformed.designpattern.pattern.comportement.mediateur.ICommande
+interface com.qualiformed.designpattern.pattern.comportement.mediateur.IMediateur
+interface com.qualiformed.designpattern.pattern.comportement.observateur.IOBservateur
+interface com.qualiformed.designpattern.pattern.comportement.observateur.IObservable
+interface com.qualiformed.designpattern.pattern.comportement.strategie.IStrategie
+interface com.qualiformed.designpattern.pattern.comportement.visiteur.IElementDeVoiture
+interface com.qualiformed.designpattern.pattern.comportement.visiteur.IVisiteurElementDeVoiture
+interface com.qualiformed.designpattern.pattern.creation.factory_method.IFabriqueObjetGeometrique
+interface com.qualiformed.designpattern.pattern.structure.adaptateur.ITreeViewAdaptateur
+interface com.qualiformed.designpattern.pattern.structure.decorateur.IVoiture
+interface com.qualiformed.designpattern.pattern.structure.objet_composite.IAttribut
+interface com.qualiformed.designpattern.pattern.structure.objet_composite.INoeud
+interface com.qualiformed.designpattern.pattern.structure.objet_composite.INoeudValeur
+interface com.qualiformed.designpattern.pattern.structure.poids_mouche.ICafeServi
+interface com.qualiformed.designpattern.pattern.structure.pont.IDessinateurObjetGeometrique
+interface com.qualiformed.designpattern.pattern.structure.proxy.IColonneValue
+interface com.qualiformed.designpattern.pattern.structure.proxy.ILigneTable
+interface com.qualiformed.designpattern.pattern.structure.proxy.ITable
+interface java.awt.event.ActionListener
+interface java.lang.Cloneable
+interface java.lang.Runnable
+interface objets_de_base.IBaseCirculaire
+interface objets_de_base.IBaseRectangulaire
+interface objets_de_base.IBaseTriangulaire
+interface objets_de_base.IForme2D
+interface objets_de_base.IForme3D
+interface objets_de_base.IObjetGeometrique
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueAbstraiteObjetGeometrique ..> objets_de_base.EnumDimension
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueAbstraiteObjetGeometrique --|> com.qualiformed.designpattern.pattern.creation.factory_method.IFabriqueObjetGeometrique
+com.qualiformed.designpattern.pattern.structure.decorateur.Option ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.decorateur.Option --|> com.qualiformed.designpattern.pattern.structure.decorateur.IVoiture
+com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable --|> objets_de_base.IObjetGeometrique
+objets_de_base.ObjetGeometriqueAbstrait --|> objets_de_base.IObjetGeometrique
+com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.EmailLogger --|> com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.Logger
+com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.StderrLogger --|> com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.Logger
+com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.StdoutLogger --|> com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.Logger
+com.qualiformed.designpattern.pattern.comportement.commande.CommandeBasculerEnBas --|> com.qualiformed.designpattern.pattern.comportement.commande.ICommande
+com.qualiformed.designpattern.pattern.comportement.commande.CommandeBasculerEnHaut --|> com.qualiformed.designpattern.pattern.comportement.commande.ICommande
+com.qualiformed.designpattern.pattern.comportement.commande.Interrupteur ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.comportement.commande.Interrupteur ..> java.util.List
+com.qualiformed.designpattern.pattern.comportement.etat.EtatA ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.etat.EtatA --|> com.qualiformed.designpattern.pattern.comportement.etat.IEtat
+com.qualiformed.designpattern.pattern.comportement.etat.EtatB ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.etat.EtatB --|> com.qualiformed.designpattern.pattern.comportement.etat.IEtat
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge1 ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge1 ..> java.awt.Color
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge1 ..> java.awt.Graphics
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge1 ..> java.util.Calendar
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge1 --|> com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.ICallbackPaint
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge2 ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge2 ..> java.awt.Color
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge2 ..> java.awt.Graphics
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge2 ..> java.util.Calendar
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge2 --|> com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.ICallbackPaint
+com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Moins ..> java.util.Stack
+com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Moins --|> com.qualiformed.designpattern.pattern.comportement.interpreteur.Expression
+com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Nombre ..> java.util.Stack
+com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Nombre --|> com.qualiformed.designpattern.pattern.comportement.interpreteur.Expression
+com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Plus ..> java.util.Stack
+com.qualiformed.designpattern.pattern.comportement.interpreteur.ExpressionTerminale_Plus --|> com.qualiformed.designpattern.pattern.comportement.interpreteur.Expression
+com.qualiformed.designpattern.pattern.comportement.interpreteur.Interpreteur ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.comportement.interpreteur.Interpreteur ..> java.util.Stack
+com.qualiformed.designpattern.pattern.comportement.iterateur.Iterateur ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnBook --|> javax.swing.JButton
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnBook --|> com.qualiformed.designpattern.pattern.comportement.mediateur.ICommande
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnBook ..> java.awt.event.ActionListener
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnSearch --|> javax.swing.JButton
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnSearch --|> com.qualiformed.designpattern.pattern.comportement.mediateur.ICommande
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnSearch ..> java.awt.event.ActionListener
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnView --|> javax.swing.JButton
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnView --|> com.qualiformed.designpattern.pattern.comportement.mediateur.ICommande
+com.qualiformed.designpattern.pattern.comportement.mediateur.BtnView ..> java.awt.event.ActionListener
+com.qualiformed.designpattern.pattern.comportement.mediateur.LblDisplay ..> java.awt.Font
+com.qualiformed.designpattern.pattern.comportement.mediateur.LblDisplay --|> javax.swing.JLabel
+com.qualiformed.designpattern.pattern.comportement.mediateur.Mediateur --|> com.qualiformed.designpattern.pattern.comportement.mediateur.IMediateur
+com.qualiformed.designpattern.pattern.comportement.memento.Gardien ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.comportement.observateur.Observateur ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.observateur.Observateur --|> com.qualiformed.designpattern.pattern.comportement.observateur.IOBservateur
+com.qualiformed.designpattern.pattern.comportement.observateur.Observe ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.observateur.Observe ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.comportement.observateur.Observe --|> com.qualiformed.designpattern.pattern.comportement.observateur.IObservable
+com.qualiformed.designpattern.pattern.comportement.patron_de_methode.Echecs --|> com.qualiformed.designpattern.pattern.comportement.patron_de_methode.JeuDeSociete
+com.qualiformed.designpattern.pattern.comportement.patron_de_methode.Echecs ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.patron_de_methode.Monopoly --|> com.qualiformed.designpattern.pattern.comportement.patron_de_methode.JeuDeSociete
+com.qualiformed.designpattern.pattern.comportement.patron_de_methode.Monopoly ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.strategie.Ajouter ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.strategie.Ajouter --|> com.qualiformed.designpattern.pattern.comportement.strategie.IStrategie
+com.qualiformed.designpattern.pattern.comportement.strategie.Multiplier ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.strategie.Multiplier --|> com.qualiformed.designpattern.pattern.comportement.strategie.IStrategie
+com.qualiformed.designpattern.pattern.comportement.strategie.Soustraire ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.strategie.Soustraire --|> com.qualiformed.designpattern.pattern.comportement.strategie.IStrategie
+com.qualiformed.designpattern.pattern.comportement.visiteur.Caisse ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.visiteur.Caisse --|> com.qualiformed.designpattern.pattern.comportement.visiteur.IElementDeVoiture
+com.qualiformed.designpattern.pattern.comportement.visiteur.Moteur ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.visiteur.Moteur --|> com.qualiformed.designpattern.pattern.comportement.visiteur.IElementDeVoiture
+com.qualiformed.designpattern.pattern.comportement.visiteur.Roue ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.visiteur.Roue --|> com.qualiformed.designpattern.pattern.comportement.visiteur.IElementDeVoiture
+com.qualiformed.designpattern.pattern.comportement.visiteur.VisiteurListeElementVoiture ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.visiteur.VisiteurListeElementVoiture --|> com.qualiformed.designpattern.pattern.comportement.visiteur.IVisiteurElementDeVoiture
+com.qualiformed.designpattern.pattern.comportement.visiteur.VisiteurVerificationElementVoiture ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.visiteur.VisiteurVerificationElementVoiture --|> com.qualiformed.designpattern.pattern.comportement.visiteur.IVisiteurElementDeVoiture
+com.qualiformed.designpattern.pattern.comportement.visiteur.Voiture ..> java.lang.Override
+com.qualiformed.designpattern.pattern.comportement.visiteur.Voiture --|> com.qualiformed.designpattern.pattern.comportement.visiteur.IElementDeVoiture
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique2D --|> com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueAbstraiteObjetGeometrique
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique2D ..> java.lang.Override
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique2D ..> objets_de_base.Carre
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique2D ..> objets_de_base.Cercle
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique2D ..> objets_de_base.Triangle
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique2D ..> objets_de_base.EnumBaseForme
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique2D ..> objets_de_base.IObjetGeometrique
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique3D --|> com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueAbstraiteObjetGeometrique
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique3D ..> java.lang.Override
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique3D ..> objets_de_base.Cube
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique3D ..> objets_de_base.Sphere
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique3D ..> objets_de_base.Tetraedre
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique3D ..> objets_de_base.EnumBaseForme
+com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueObjetGeometrique3D ..> objets_de_base.IObjetGeometrique
+com.qualiformed.designpattern.pattern.creation.builder.BuilderImmeuble --|> com.qualiformed.designpattern.pattern.creation.builder.BuilderMaison
+com.qualiformed.designpattern.pattern.creation.builder.BuilderImmeuble ..> java.lang.Override
+com.qualiformed.designpattern.pattern.creation.builder.BuilderImmeuble ..> objets_de_base.Rectangle
+com.qualiformed.designpattern.pattern.creation.builder.BuilderMaisonIndividuelle --|> com.qualiformed.designpattern.pattern.creation.builder.BuilderMaison
+com.qualiformed.designpattern.pattern.creation.builder.BuilderMaisonIndividuelle ..> java.lang.Override
+com.qualiformed.designpattern.pattern.creation.builder.BuilderMaisonIndividuelle ..> objets_de_base.Rectangle
+com.qualiformed.designpattern.pattern.creation.builder.BuilderMaisonIndividuelle ..> objets_de_base.Triangle
+com.qualiformed.designpattern.pattern.creation.builder.Maison --|> objets_de_base.ObjetGeometriqueAbstrait
+com.qualiformed.designpattern.pattern.creation.builder.Maison ..> objets_de_base.ListeObjetGeometrique
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.Carre
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.Cercle
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.Cube
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.Sphere
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.Tetraedre
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.Triangle
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.EnumBaseForme
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.EnumDimension
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique --|> com.qualiformed.designpattern.pattern.creation.factory_method.IFabriqueObjetGeometrique
+com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique ..> objets_de_base.IObjetGeometrique
+com.qualiformed.designpattern.pattern.creation.prototype.Modele ..> java.lang.Override
+com.qualiformed.designpattern.pattern.creation.prototype.Modele --|> com.qualiformed.designpattern.pattern.creation.prototype.ModeleBase
+com.qualiformed.designpattern.pattern.creation.prototype.ModeleBase ..> java.lang.Override
+com.qualiformed.designpattern.pattern.creation.prototype.ModeleBase --|> java.lang.Cloneable
+com.qualiformed.designpattern.pattern.structure.adaptateur.AdaptateurSimpleTreeViewToHTML ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.adaptateur.AdaptateurSimpleTreeViewToHTML ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.structure.adaptateur.AdaptateurSimpleTreeViewToHTML ..> java.util.Arrays
+com.qualiformed.designpattern.pattern.structure.adaptateur.AdaptateurSimpleTreeViewToHTML --|> com.qualiformed.designpattern.pattern.structure.adaptateur.ITreeViewAdaptateur
+com.qualiformed.designpattern.pattern.structure.decorateur.AstonMartin ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.decorateur.AstonMartin --|> com.qualiformed.designpattern.pattern.structure.decorateur.IVoiture
+com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAmphibie --|> com.qualiformed.designpattern.pattern.structure.decorateur.Option
+com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAvecClimatisation --|> com.qualiformed.designpattern.pattern.structure.decorateur.Option
+com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAvecParachute --|> com.qualiformed.designpattern.pattern.structure.decorateur.Option
+com.qualiformed.designpattern.pattern.structure.facade.DateFacile ..> java.util.Calendar
+com.qualiformed.designpattern.pattern.structure.facade.DateFacile ..> java.util.GregorianCalendar
+com.qualiformed.designpattern.pattern.structure.objet_composite.Attribut ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.objet_composite.Attribut --|> com.qualiformed.designpattern.pattern.structure.objet_composite.IAttribut
+com.qualiformed.designpattern.pattern.structure.objet_composite.Noeud ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.objet_composite.Noeud ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.structure.objet_composite.Noeud ..> java.util.HashMap
+com.qualiformed.designpattern.pattern.structure.objet_composite.Noeud --|> com.qualiformed.designpattern.pattern.structure.objet_composite.INoeud
+com.qualiformed.designpattern.pattern.structure.objet_composite.NoeudValeur ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.objet_composite.NoeudValeur --|> com.qualiformed.designpattern.pattern.structure.objet_composite.INoeudValeur
+com.qualiformed.designpattern.pattern.structure.poids_mouche.Cafe ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.poids_mouche.Cafe ..> java.util.HashMap
+com.qualiformed.designpattern.pattern.structure.poids_mouche.Cafe --|> com.qualiformed.designpattern.pattern.structure.poids_mouche.ICafeServi
+com.qualiformed.designpattern.pattern.structure.pont.CercleDessinable --|> com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable
+com.qualiformed.designpattern.pattern.structure.pont.CercleDessinable ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.pont.CercleDessinable ..> objets_de_base.Coord2D
+com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV1 ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV1 ..> objets_de_base.Coord2D
+com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV1 ..> objets_de_base.Coord3D
+com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV1 --|> com.qualiformed.designpattern.pattern.structure.pont.IDessinateurObjetGeometrique
+com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV2 ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV2 ..> objets_de_base.Coord2D
+com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV2 ..> objets_de_base.Coord3D
+com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV2 --|> com.qualiformed.designpattern.pattern.structure.pont.IDessinateurObjetGeometrique
+com.qualiformed.designpattern.pattern.structure.pont.ParallelepipedeDessinable --|> com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable
+com.qualiformed.designpattern.pattern.structure.pont.ParallelepipedeDessinable ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.pont.ParallelepipedeDessinable ..> objets_de_base.Coord3D
+com.qualiformed.designpattern.pattern.structure.pont.RectangleDessinable --|> com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable
+com.qualiformed.designpattern.pattern.structure.pont.RectangleDessinable ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.pont.RectangleDessinable ..> objets_de_base.Coord2D
+com.qualiformed.designpattern.pattern.structure.pont.SphereDessinable --|> com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable
+com.qualiformed.designpattern.pattern.structure.pont.SphereDessinable ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.pont.SphereDessinable ..> objets_de_base.Coord3D
+com.qualiformed.designpattern.pattern.structure.pont.TetraedreDessinable --|> com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable
+com.qualiformed.designpattern.pattern.structure.pont.TetraedreDessinable ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.pont.TetraedreDessinable ..> objets_de_base.Coord3D
+com.qualiformed.designpattern.pattern.structure.pont.TriangleDessinable --|> com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable
+com.qualiformed.designpattern.pattern.structure.pont.TriangleDessinable ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.pont.TriangleDessinable ..> objets_de_base.Coord2D
+com.qualiformed.designpattern.pattern.structure.proxy.LigneTable ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.proxy.LigneTable ..> java.util.HashMap
+com.qualiformed.designpattern.pattern.structure.proxy.LigneTable ..> java.util.Map.Entry
+com.qualiformed.designpattern.pattern.structure.proxy.LigneTable --|> com.qualiformed.designpattern.pattern.structure.proxy.ILigneTable
+com.qualiformed.designpattern.pattern.structure.proxy.LigneTableProxy ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.proxy.LigneTableProxy --|> com.qualiformed.designpattern.pattern.structure.proxy.ILigneTable
+com.qualiformed.designpattern.pattern.structure.proxy.Table ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.proxy.Table ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.structure.proxy.Table ..> java.util.HashMap
+com.qualiformed.designpattern.pattern.structure.proxy.Table --|> com.qualiformed.designpattern.pattern.structure.proxy.ITable
+com.qualiformed.designpattern.pattern.structure.proxy.TableProxy ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.proxy.TableProxy ..> java.util.HashMap
+com.qualiformed.designpattern.pattern.structure.proxy.TableProxy --|> com.qualiformed.designpattern.pattern.structure.proxy.ITable
+com.qualiformed.designpattern.pattern.structure.proxy.ValeurChaine ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.proxy.ValeurChaine --|> com.qualiformed.designpattern.pattern.structure.proxy.IColonneValue
+com.qualiformed.designpattern.pattern.structure.proxy.ValeurEntier ..> java.lang.Override
+com.qualiformed.designpattern.pattern.structure.proxy.ValeurEntier --|> com.qualiformed.designpattern.pattern.structure.proxy.IColonneValue
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_ChaineDeResponsabilite ..> com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.Logger
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_ChaineDeResponsabilite ..> com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.EmailLogger
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_ChaineDeResponsabilite ..> com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.StderrLogger
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_ChaineDeResponsabilite ..> com.qualiformed.designpattern.pattern.comportement.chaine_de_responsabilite.StdoutLogger
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Commande ..> com.qualiformed.designpattern.pattern.comportement.commande.CommandeBasculerEnBas
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Commande ..> com.qualiformed.designpattern.pattern.comportement.commande.CommandeBasculerEnHaut
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Commande ..> com.qualiformed.designpattern.pattern.comportement.commande.Interrupteur
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Commande ..> com.qualiformed.designpattern.pattern.comportement.commande.Lampe
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Commande ..> com.qualiformed.designpattern.pattern.comportement.commande.ICommande
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Etat ..> com.qualiformed.designpattern.pattern.comportement.etat.Contexte
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Interpreteur ..> com.qualiformed.designpattern.pattern.comportement.interpreteur.Interpreteur
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Iterateur ..> com.qualiformed.designpattern.pattern.comportement.iterateur.Iterateur
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Iterateur ..> java.util.ArrayList
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> com.qualiformed.designpattern.pattern.comportement.mediateur.BtnBook
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> com.qualiformed.designpattern.pattern.comportement.mediateur.BtnSearch
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> com.qualiformed.designpattern.pattern.comportement.mediateur.BtnView
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> com.qualiformed.designpattern.pattern.comportement.mediateur.LblDisplay
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> com.qualiformed.designpattern.pattern.comportement.mediateur.Mediateur
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> java.awt.Dimension
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> java.awt.Toolkit
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> java.awt.event.ActionEvent
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur --|> javax.swing.JFrame
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> javax.swing.JPanel
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> com.qualiformed.designpattern.pattern.comportement.mediateur.ICommande
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur ..> com.qualiformed.designpattern.pattern.comportement.mediateur.IMediateur
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Mediateur --|> java.awt.event.ActionListener
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Memento ..> com.qualiformed.designpattern.pattern.comportement.memento.Createur
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Memento ..> com.qualiformed.designpattern.pattern.comportement.memento.Gardien
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Observateur ..> com.qualiformed.designpattern.pattern.comportement.observateur.Observateur
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Observateur ..> com.qualiformed.designpattern.pattern.comportement.observateur.Observe
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Strategie ..> com.qualiformed.designpattern.pattern.comportement.strategie.Ajouter
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Strategie ..> com.qualiformed.designpattern.pattern.comportement.strategie.Contexte
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Strategie ..> com.qualiformed.designpattern.pattern.comportement.strategie.Multiplier
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Strategie ..> com.qualiformed.designpattern.pattern.comportement.strategie.Soustraire
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Visiteur ..> com.qualiformed.designpattern.pattern.comportement.visiteur.VisiteurListeElementVoiture
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Visiteur ..> com.qualiformed.designpattern.pattern.comportement.visiteur.VisiteurVerificationElementVoiture
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Visiteur ..> com.qualiformed.designpattern.pattern.comportement.visiteur.Voiture
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_Visiteur ..> com.qualiformed.designpattern.pattern.comportement.visiteur.IElementDeVoiture
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.lang.Override
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> com.cloudgarden.layout.AnchorConstraint
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> com.cloudgarden.layout.AnchorLayout
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge1
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.DessinerHorloge2
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.Dimension
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.Graphics
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.Image
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.Rectangle
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.event.ActionEvent
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.event.ComponentAdapter
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.event.ComponentEvent
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.event.WindowAdapter
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.event.WindowEvent
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.beans.PropertyChangeEvent
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.beans.PropertyChangeListener
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.util.HashMap
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.util.Map.Entry
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> javax.swing.ComboBoxModel
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> javax.swing.DefaultComboBoxModel
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> javax.swing.JComboBox
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel --|> javax.swing.JFrame
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> javax.swing.JPanel
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> javax.swing.JSplitPane
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> javax.swing.SwingUtilities
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> javax.swing.WindowConstants
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.ICallbackPaint
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel ..> java.awt.event.ActionListener
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_fonction_de_rappel --|> java.lang.Runnable
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_patron_de_methode ..> com.qualiformed.designpattern.pattern.comportement.patron_de_methode.Echecs
+com.qualiformed.designpattern.tests.Test_PatternDeComportement_patron_de_methode ..> com.qualiformed.designpattern.pattern.comportement.patron_de_methode.Monopoly
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Builder ..> com.qualiformed.designpattern.pattern.creation.builder.BuilderMaison
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Builder ..> com.qualiformed.designpattern.pattern.creation.builder.BuilderImmeuble
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Builder ..> com.qualiformed.designpattern.pattern.creation.builder.BuilderMaisonIndividuelle
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Builder ..> com.qualiformed.designpattern.pattern.creation.builder.Maison
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Builder ..> com.qualiformed.designpattern.pattern.creation.builder.MaitreDOeuvre
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Fabrique ..> com.qualiformed.designpattern.pattern.creation.factory_method.FabriqueObjetGeometrique
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Fabrique ..> objets_de_base.EnumBaseForme
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Fabrique ..> objets_de_base.EnumDimension
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Fabrique ..> objets_de_base.IObjetGeometrique
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_FabriqueAbstraite ..> com.qualiformed.designpattern.pattern.creation.abstract_factory.FabriqueAbstraiteObjetGeometrique
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_FabriqueAbstraite ..> objets_de_base.EnumBaseForme
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_FabriqueAbstraite ..> objets_de_base.EnumDimension
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_FabriqueAbstraite ..> com.qualiformed.designpattern.pattern.creation.factory_method.IFabriqueObjetGeometrique
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_FabriqueAbstraite ..> objets_de_base.IObjetGeometrique
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Prototype ..> com.qualiformed.designpattern.pattern.creation.prototype.ConstructeurPrototype
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Prototype ..> com.qualiformed.designpattern.pattern.creation.prototype.Modele
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Prototype ..> com.qualiformed.designpattern.pattern.creation.prototype.ModeleBase
+com.qualiformed.designpattern.tests.Test_PatternDeCreation_Singleton ..> com.qualiformed.designpattern.pattern.creation.singleton.Singleton
+com.qualiformed.designpattern.tests.Test_PatternStructure_Adaptateur ..> com.qualiformed.designpattern.pattern.structure.adaptateur.AdaptateurSimpleTreeViewToHTML
+com.qualiformed.designpattern.tests.Test_PatternStructure_Adaptateur ..> com.qualiformed.designpattern.pattern.structure.adaptateur.TreeViewSimple
+com.qualiformed.designpattern.tests.Test_PatternStructure_Adaptateur ..> objets_de_base.EmptyHtmlBuilder
+com.qualiformed.designpattern.tests.Test_PatternStructure_Composite ..> com.qualiformed.designpattern.pattern.structure.objet_composite.Noeud
+com.qualiformed.designpattern.tests.Test_PatternStructure_Composite ..> com.qualiformed.designpattern.pattern.structure.objet_composite.NoeudValeur
+com.qualiformed.designpattern.tests.Test_PatternStructure_Composite ..> java.util.Arrays
+com.qualiformed.designpattern.tests.Test_PatternStructure_Composite ..> com.qualiformed.designpattern.pattern.structure.objet_composite.INoeud
+com.qualiformed.designpattern.tests.Test_PatternStructure_Decorateur ..> com.qualiformed.designpattern.pattern.structure.decorateur.AstonMartin
+com.qualiformed.designpattern.tests.Test_PatternStructure_Decorateur ..> com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAmphibie
+com.qualiformed.designpattern.tests.Test_PatternStructure_Decorateur ..> com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAvecClimatisation
+com.qualiformed.designpattern.tests.Test_PatternStructure_Decorateur ..> com.qualiformed.designpattern.pattern.structure.decorateur.VoitureAvecParachute
+com.qualiformed.designpattern.tests.Test_PatternStructure_Decorateur ..> com.qualiformed.designpattern.pattern.structure.decorateur.IVoiture
+com.qualiformed.designpattern.tests.Test_PatternStructure_Facade ..> com.qualiformed.designpattern.pattern.structure.facade.DateFacile
+com.qualiformed.designpattern.tests.Test_PatternStructure_PoidsMouche ..> com.qualiformed.designpattern.pattern.structure.poids_mouche.Cafe
+com.qualiformed.designpattern.tests.Test_PatternStructure_PoidsMouche ..> com.qualiformed.designpattern.pattern.structure.poids_mouche.CommandeCafe
+com.qualiformed.designpattern.tests.Test_PatternStructure_PoidsMouche ..> com.qualiformed.designpattern.pattern.structure.poids_mouche.ContexteCommande
+com.qualiformed.designpattern.tests.Test_PatternStructure_PoidsMouche ..> java.util.ArrayList
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> com.qualiformed.designpattern.pattern.structure.proxy.LigneTable
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> com.qualiformed.designpattern.pattern.structure.proxy.LigneTableProxy
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> com.qualiformed.designpattern.pattern.structure.proxy.Table
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> com.qualiformed.designpattern.pattern.structure.proxy.TableProxy
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> com.qualiformed.designpattern.pattern.structure.proxy.ValeurChaine
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> com.qualiformed.designpattern.pattern.structure.proxy.ValeurEntier
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> java.util.HashMap
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> com.qualiformed.designpattern.pattern.structure.proxy.IColonneValue
+com.qualiformed.designpattern.tests.Test_PatternStructure_Proxy ..> com.qualiformed.designpattern.pattern.structure.proxy.ILigneTable
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.ObjetGeometriqueDessinable
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.CercleDessinable
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV1
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.DessinateurObjetGeometriqueV2
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.ParallelepipedeDessinable
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.RectangleDessinable
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.SphereDessinable
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.TetraedreDessinable
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.TriangleDessinable
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> objets_de_base.Coord2D
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> objets_de_base.Coord3D
+com.qualiformed.designpattern.tests.Test_PatternStructure_pont ..> com.qualiformed.designpattern.pattern.structure.pont.IDessinateurObjetGeometrique
+objets_de_base.Carre --|> objets_de_base.Rectangle
+objets_de_base.Cercle --|> objets_de_base.ObjetGeometriqueAbstrait
+objets_de_base.Cercle --|> objets_de_base.IBaseCirculaire
+objets_de_base.Cercle --|> objets_de_base.IForme2D
+objets_de_base.Coord2D ..> java.lang.Override
+objets_de_base.Coord3D ..> java.lang.Override
+objets_de_base.Cube --|> objets_de_base.Parallelepipede
+objets_de_base.ListeObjetGeometrique --|> java.util.ArrayList
+objets_de_base.ListeObjetGeometrique ..> java.util.Collection
+objets_de_base.Parallelepipede --|> objets_de_base.ObjetGeometriqueAbstrait
+objets_de_base.Parallelepipede --|> objets_de_base.IBaseRectangulaire
+objets_de_base.Parallelepipede --|> objets_de_base.IForme3D
+objets_de_base.Rectangle --|> objets_de_base.ObjetGeometriqueAbstrait
+objets_de_base.Rectangle --|> objets_de_base.IBaseRectangulaire
+objets_de_base.Rectangle --|> objets_de_base.IForme2D
+objets_de_base.Sphere --|> objets_de_base.ObjetGeometriqueAbstrait
+objets_de_base.Sphere --|> objets_de_base.IBaseCirculaire
+objets_de_base.Sphere --|> objets_de_base.IForme3D
+objets_de_base.Tetraedre --|> objets_de_base.ObjetGeometriqueAbstrait
+objets_de_base.Tetraedre --|> objets_de_base.IBaseTriangulaire
+objets_de_base.Tetraedre --|> objets_de_base.IForme3D
+objets_de_base.Triangle --|> objets_de_base.ObjetGeometriqueAbstrait
+objets_de_base.Triangle --|> objets_de_base.IBaseCirculaire
+objets_de_base.Triangle --|> objets_de_base.IForme2D
+com.qualiformed.designpattern.pattern.comportement.fonction_de_rappel.ICallbackPaint ..> java.awt.Graphics
+com.qualiformed.designpattern.pattern.comportement.interpreteur.Expression ..> java.util.Stack
+com.qualiformed.designpattern.pattern.creation.factory_method.IFabriqueObjetGeometrique ..> objets_de_base.EnumBaseForme
+com.qualiformed.designpattern.pattern.creation.factory_method.IFabriqueObjetGeometrique ..> objets_de_base.IObjetGeometrique
+com.qualiformed.designpattern.pattern.structure.objet_composite.INoeud ..> java.util.ArrayList
+com.qualiformed.designpattern.pattern.structure.pont.IDessinateurObjetGeometrique ..> objets_de_base.Coord2D
+com.qualiformed.designpattern.pattern.structure.pont.IDessinateurObjetGeometrique ..> objets_de_base.Coord3D
+com.qualiformed.designpattern.pattern.structure.proxy.IColonneValue --|> java.lang.Cloneable
+com.qualiformed.designpattern.pattern.structure.proxy.ILigneTable --|> java.lang.Cloneable
+com.qualiformed.designpattern.pattern.structure.proxy.ITable ..> java.util.HashMap
+objets_de_base.IForme2D --|> objets_de_base.IObjetGeometrique
+objets_de_base.IForme3D --|> objets_de_base.IObjetGeometrique
+@enduml
